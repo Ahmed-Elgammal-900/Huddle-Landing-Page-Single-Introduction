@@ -1,0 +1,301 @@
+/* Start Global Rules */
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+  /* Small */  
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+} 
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+} 
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+/* End Global Rules */
+
+/* Start Header */
+header{
+    padding: 20px;
+}
+/* End Header */
+
+/* Start Main */
+main{
+    margin-top: 50px;
+}
+main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container img{
+    width: 650px;
+}
+
+main .container .text{
+    width: 460px;
+    align-self: flex-start;
+}
+
+main .container .text h2{
+    color: white;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 35px;
+}
+
+main .container .text p{
+    color: white;
+    font-family: 'open sans';
+    line-height: 1.6;
+    width: 460px;
+}
+
+main .container .text button{
+    width: 170px;
+    height: 50px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-family: 'poppins';
+    font-weight: 400;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.262);
+    margin-top: 15px;
+}
+
+main .container .text button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+/* End Main */
+
+/* Start Footer */
+footer{
+    margin-top: 25px;
+}
+footer .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer .container .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 155px;
+    font-size: 19px;
+    color:white;
+}
+
+footer .container .icons i{
+    border:  1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .icons i:first-child{
+    width: 18px;
+}
+
+footer .container .icons i:hover{
+    cursor: pointer;
+    color: hsl(300, 78%, 65%);
+    border-color: hsl(300, 78%, 65%);
+}
+
+@media(max-width:1200px){
+    main .container img{
+        width: 550px;
+    }
+
+    main .container .text{
+        width: 370px;
+    }
+
+    main .container .text h2{
+        width: 340px;
+        font-size: 30px;
+    }
+
+    main .container .text p{
+        width: 370px;
+        font-size: 13px;
+    }
+
+    footer{
+        margin-top: 85px;
+    }
+}
+
+@media (max-width:992px){
+    header img{
+        width: 230px;
+    }
+    main .container img{
+        width: 450px;
+    }
+
+    main .container .text{
+        width: 300px;
+        margin-left: 40px;
+    }
+
+    main .container .text h2{
+        width: 300px;
+        font-size: 25px;
+    }
+
+    main .container .text p{
+        width: 300px;
+        font-size: 12px;
+    }
+
+    main .container .text button{
+        width: 180px;
+    }
+
+    footer .container{
+        justify-content: center;
+        margin-top: 165px;
+    }
+}
+
+@media (max-width:830px){
+
+    main .container{
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    main .container .text{
+        margin-left: 0;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .container{
+        margin-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    main .container .text h2{
+        width: 400px;
+        font-size: 35px;
+    }
+
+    main .container .text p{
+        width: 370px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:728px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-size: contain;
+        background-position: top;
+    }
+}
+@media (max-width:480px){
+
+    header{
+        padding-left: 10px;
+    }
+    header img{
+        width: 200px;
+    }
+    header .container{
+        padding: 0;
+    }
+
+    main .container img{
+        width: 300px;
+    }
+
+    main .container .text{
+        width: 300px;
+    }
+
+    main .container .text h2{
+        width: 300px;
+        font-size: 27px;
+    }
+
+    main .container .text p{
+        width: 300px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:380px) {
+
+    header img{
+        width: 150px;
+    }
+    main .container .text{
+        width: 300px;
+    }
+
+    main .container .text h2{
+        width: 280px;
+        font-size: 23px;
+    }
+
+    main .container .text p{
+        width: 280px;
+        font-size: 11px;
+    } 
+
+    main .container .text button{
+        width: 170px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    footer .container{
+        margin-top: 100px;
+    }
+}
+/* End Footer */
